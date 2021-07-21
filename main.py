@@ -1,14 +1,54 @@
-# (150/5)*1.12 = 33.6 
 
-print("Welcome to the tip calculator!")
+# Angela Yu
+#  Jack Bauer
+# 53%
 
-total_bill = float(input("What was the total bill? $"))
-percentage = int(input("What percentage tip would you like to give? \n 10, 12 or 15?\n"))
-no_of_people = int(input("How many people to split the bill? "))
-#bill = "{:2f}".format(total_bill)
+name1 = input("What is the your name? \n")
+name2 = input ("What is your significant's name?\n")
 
-Result = round((total_bill/no_of_people) * (1+ (percentage/100)),2)
+name1.lower 
+name2.lower
 
-print(f"Each person should pay: ${Result}") 
+combine_name = (name1 + " " + name2) 
 
-# print(Result)
+# true love 
+t = int(combine_name.count("t"))
+r = int(combine_name.count("r"))
+u = int(combine_name.count("u"))
+e = int(combine_name.count("e"))
+l = int(combine_name.count("l"))
+o = int(combine_name.count("o"))
+v = int(combine_name.count("v"))
+
+result1 = (t+r+u+e)
+result2 = (l+o+v+e)
+score = (result1*10) + result2
+
+# print(type(result1))
+
+# print(f"Your love score is {score}%")
+
+# print(type(result2))
+
+# if score >=10:
+#   if score <40: #btwn 10 & 40
+#     print(f" Your score is {score}%. Nothing much")
+
+#   elif score <=50: #btwn 40 & 50
+#     print(f"Your score is {score}%, you are alright togther")
+
+#   elif score <=90:
+#     print(f" Your score is {score}%. Nothing much")
+  
+#   else:
+#     print(f"Your score is {score}%, you go together like coke and mentos." )
+# else:
+#   print(f" Your score is {score}%. Nothing much")
+
+
+if score < 10 or score >90:
+  print(f"Your score is {score}%, you go together like coke and mentos." )
+elif score >=40 and score <=50:
+  print(f"Your score is {score}%, you are alright togther")
+else:
+  print(f" Your score is {score}%. Nothing much")
